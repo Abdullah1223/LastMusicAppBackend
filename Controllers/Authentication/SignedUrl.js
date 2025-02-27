@@ -16,7 +16,7 @@ const SignedUrl = async(req,res)=>{
     }
   
     const SignedUrl = await getObjectUrlForUpload(`Uploads/User_Uploads/Profilepictures/${filename}`,fileType)
-    console.log(SignedUrl)
+  //  console.log(SignedUrl)
     if(SignedUrl){
       return res.status(200).send({bucketsignedurl:SignedUrl,filename:filename})
     }

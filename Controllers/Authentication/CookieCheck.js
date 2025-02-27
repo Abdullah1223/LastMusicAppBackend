@@ -16,7 +16,7 @@ const CookieCheck = (req,res)=>{
             return res.status(400).send({message:'Token is Tampered'})
             
         } 
-        console.log(decoded)
+      //  console.log(decoded)
         return res.status(200).send(decoded) 
 
        }) 

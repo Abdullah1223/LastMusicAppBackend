@@ -13,7 +13,7 @@ const Login=async(req,res)=>{
     const {password}=req.body
     const email = req.body.email.toLowerCase()
     const ValidatingUser = await UserManager.findOne({email:email}) 
-    console.log(ValidatingUser)
+   // console.log(ValidatingUser)
     const payload={
         _id:ValidatingUser?._id,
         role:ValidatingUser?.role,
